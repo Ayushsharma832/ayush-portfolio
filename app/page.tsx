@@ -1,65 +1,147 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+    <main className="min-h-screen bg-white text-gray-900 px-6 py-16">
+      <div className="max-w-4xl mx-auto space-y-24">
+
+        {/* HERO SECTION */}
+        <section>
+          <h1 className="text-5xl font-bold tracking-tight">
+            Ayush Sharma
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+
+          <p className="mt-4 text-xl text-gray-600">
+            Conversational AI Engineer
           </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+
+          <p className="mt-6 text-lg text-gray-700 leading-relaxed">
+            Associate Developer with 1+ year of experience designing and deploying
+            enterprise-grade conversational AI solutions. Specialized in building
+            voicebots and chatbots using Omilia, Amelia, and Dialogflow.
+            Currently expanding into high-code Agentic AI systems using Python and modern AI frameworks.
+          </p>
+
+          <div className="mt-8 flex gap-4">
+            <a
+              href="https://www.linkedin.com/in/ayush-sharma-09a1951b8/"
+              target="_blank"
+              className="px-6 py-3 bg-gray-900 text-white rounded-lg hover:bg-gray-700 transition"
+            >
+              LinkedIn
+            </a>
+
+            <a
+              href="https://github.com/Ayushsharma832"
+              target="_blank"
+              className="px-6 py-3 border border-gray-900 rounded-lg hover:bg-gray-100 transition"
+            >
+              GitHub
+            </a>
+          </div>
+        </section>
+
+        {/* EXPERIENCE SECTION */}
+        <section>
+          <h2 className="text-3xl font-semibold mb-6">Experience</h2>
+
+          <div className="border rounded-xl p-6 shadow-sm">
+            <h3 className="text-xl font-semibold">
+              Associate Developer – EXL
+            </h3>
+            <p className="text-gray-500 mt-1">1 Year | Conversational AI & Voice Automation</p>
+
+            <ul className="mt-4 list-disc list-inside text-gray-700 space-y-2">
+              <li>Designed and deployed enterprise conversational AI solutions using Omilia, Amelia, and Dialogflow.</li>
+              <li>Built and optimized voicebots and chatbots handling real-world user interactions.</li>
+              <li>Designed intent architecture, dialogue flows, and conversation orchestration strategies.</li>
+              <li>Integrated external APIs and backend services for dynamic responses.</li>
+              <li>Improved bot accuracy and response quality through testing and iterative refinement.</li>
+            </ul>
+          </div>
+        </section>
+
+        {/* PROJECTS SECTION */}
+        <section>
+          <h2 className="text-3xl font-semibold mb-6">Projects</h2>
+
+          <div className="grid gap-6">
+
+            <div className="border rounded-xl p-6 shadow-sm">
+              <h3 className="text-xl font-semibold">FlickFlow – ML Movie Recommendation System</h3>
+              <p className="mt-2 text-gray-700">
+                Built a content-based recommendation system using Python, Pandas, and scikit-learn.
+                Implemented similarity algorithms and deployed using Streamlit Cloud.
+              </p>
+              <a
+                href="https://flickflow.streamlit.app/"
+                target="_blank"
+                className="inline-block mt-3 text-blue-600 hover:underline"
+              >
+                View Live Project →
+              </a>
+            </div>
+
+            <div className="border rounded-xl p-6 shadow-sm">
+              <h3 className="text-xl font-semibold">LocalAgroConnect – Full Stack Marketplace</h3>
+              <p className="mt-2 text-gray-700">
+                Developed a full-stack agricultural trade platform using HTML, CSS, JS, PHP, and MySQL.
+                Designed multi-role system for buyers, sellers, and learners.
+              </p>
+              <a
+                href="https://github.com/Ayushsharma832/the_natural_farm"
+                target="_blank"
+                className="inline-block mt-3 text-blue-600 hover:underline"
+              >
+                View Source Code →
+              </a>
+            </div>
+
+            <div className="border rounded-xl p-6 shadow-sm">
+              <h3 className="text-xl font-semibold">Dynamic Market Insights – Tableau Dashboard</h3>
+              <p className="mt-2 text-gray-700">
+                Designed interactive sales analytics dashboard using Excel and Tableau.
+                Generated actionable business insights for hardware market trends.
+              </p>
+              <a
+                href="https://public.tableau.com/app/profile/ayush.sharma8368/viz/DynamicMarketInsightsTableau-PoweredSalesAnalysis/Dashboard1"
+                target="_blank"
+                className="inline-block mt-3 text-blue-600 hover:underline"
+              >
+                View Dashboard →
+              </a>
+            </div>
+
+          </div>
+        </section>
+
+        {/* SKILLS SECTION */}
+        <section>
+          <h2 className="text-3xl font-semibold mb-6">Technical Skills</h2>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 text-gray-700">
+            <div>Python</div>
+            <div>SQL</div>
+            <div>Conversational AI</div>
+            <div>Dialogflow</div>
+            <div>Omilia</div>
+            <div>Amelia</div>
+            <div>Machine Learning</div>
+            <div>Streamlit</div>
+            <div>Git & GitHub</div>
+            <div>Tableau</div>
+            <div>REST APIs</div>
+            <div>Intent Architecture</div>
+          </div>
+        </section>
+
+        {/* FOOTER */}
+        <footer className="pt-12 border-t text-center text-gray-500">
+          <p>© {new Date().getFullYear()} Ayush Sharma</p>
+          <p className="mt-2">
+            Open to Conversational AI & GenAI Engineering Opportunities
+          </p>
+        </footer>
+
+      </div>
+    </main>
   );
 }
