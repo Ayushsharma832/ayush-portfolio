@@ -10,7 +10,7 @@ export default function Home() {
           </h1>
 
           <p className="mt-4 text-xl text-gray-600">
-            Conversational AI Engineer
+          Conversational AI Engineer | Voice & Agentic Systems
           </p>
 
           <p className="mt-6 text-lg text-gray-700 leading-relaxed">
@@ -36,6 +36,13 @@ export default function Home() {
             >
               GitHub
             </a>
+            <a
+              href="/Ayush_Sharma_Resume.pdf"
+              target="_blank"
+              className="px-6 py-3 border border-gray-900 rounded-lg hover:bg-gray-100 transition"
+            >
+              Download Resume
+            </a>
           </div>
         </section>
 
@@ -50,12 +57,13 @@ export default function Home() {
             <p className="text-gray-500 mt-1">1 Year | Conversational AI & Voice Automation</p>
 
             <ul className="mt-4 list-disc list-inside text-gray-700 space-y-2">
-              <li>Designed and deployed enterprise conversational AI solutions using Omilia, Amelia, and Dialogflow.</li>
-              <li>Built and optimized voicebots and chatbots handling real-world user interactions.</li>
-              <li>Designed intent architecture, dialogue flows, and conversation orchestration strategies.</li>
-              <li>Integrated external APIs and backend services for dynamic responses.</li>
-              <li>Improved bot accuracy and response quality through testing and iterative refinement.</li>
-            </ul>
+            <li>Designed and deployed enterprise-grade conversational AI solutions serving real user interactions.</li>
+            <li>Architected intent structures and multi-turn dialogue flows for voice and chat automation.</li>
+            <li>Integrated external APIs and backend systems for dynamic and context-aware responses.</li>
+            <li>Improved conversational accuracy through testing, tuning, and iterative refinement.</li>
+            <li>Collaborated with cross-functional teams to deliver scalable AI automation solutions.</li>
+          </ul>
+
           </div>
         </section>
 
@@ -110,6 +118,21 @@ export default function Home() {
               </a>
             </div>
 
+          </div>
+        </section>
+    {/* CURRENTLY BUILDING */}
+        <section>
+          <h2 className="text-3xl font-semibold mb-6">Currently Building</h2>
+
+          <div className="border rounded-xl p-6 shadow-sm">
+            <h3 className="text-xl font-semibold">
+              High-Code Agentic AI Systems (In Progress)
+            </h3>
+            <p className="mt-2 text-gray-700">
+              Developing advanced conversational and agent-based AI systems using
+              Python, FastAPI, and modern LLM frameworks. Focused on tool-using agents,
+              RAG pipelines, and enterprise-ready AI orchestration.
+            </p>
           </div>
         </section>
 
