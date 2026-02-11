@@ -70,6 +70,27 @@ export default function Home() {
         {/* PROJECTS SECTION */}
         <section>
           <h2 className="text-3xl font-semibold mb-6">Projects</h2>
+          <div className="border rounded-xl p-6 shadow-sm">
+            <h3 className="text-xl font-semibold">
+              Autonomous AI Trade Monitoring Agent
+            </h3>
+            <p className="mt-2 text-gray-700">
+              Co-developed a real-time financial anomaly detection system combining
+              machine learning, deep learning, and LLM-based reasoning. Implemented
+              ensemble detection models including Isolation Forest, LOF, One-Class SVM,
+              Z-Score, and LSTM Autoencoder. Integrated live market data, generated
+              contextual explanations using Groq LLM, and delivered instant Telegram alerts.
+              Deployed on AWS EC2 with multi-user monitoring support.
+            </p>
+
+            <a
+              href="https://github.com/Ayushsharma832/Automated-Trade-Monitoring-Agent"
+              target="_blank"
+              className="inline-block mt-3 text-blue-600 hover:underline"
+            >
+              View Project →
+            </a>
+          </div>
 
           <div className="grid gap-6">
 
