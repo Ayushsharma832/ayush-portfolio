@@ -70,6 +70,36 @@ export default function Home() {
         {/* PROJECTS SECTION */}
         <section>
           <h2 className="text-3xl font-semibold mb-6">Projects</h2>
+          <div className="bg-gray-900 p-6 rounded-xl border border-gray-800 hover:border-blue-500 transition">
+            <h3 className="text-xl font-semibold mb-2">
+              Enterprise RAG Conversational Assistant
+            </h3>
+
+            <p className="text-gray-400 mb-4">
+              Production-style Retrieval-Augmented Generation (RAG) system with
+              semantic search, dynamic document upload, persistent FAISS indexing,
+              and Groq LLM integration for enterprise Q&A.
+            </p>
+
+            <div className="flex flex-wrap gap-2 mb-4">
+              <span className="bg-gray-800 px-3 py-1 rounded text-sm">Python</span>
+              <span className="bg-gray-800 px-3 py-1 rounded text-sm">FastAPI</span>
+              <span className="bg-gray-800 px-3 py-1 rounded text-sm">FAISS</span>
+              <span className="bg-gray-800 px-3 py-1 rounded text-sm">Sentence-Transformers</span>
+              <span className="bg-gray-800 px-3 py-1 rounded text-sm">Groq LLM</span>
+            </div>
+
+            <div className="flex gap-4">
+              <a
+                href="https://github.com/Ayushsharma832/enterprise-rag-assistant"
+                target="_blank"
+                className="text-blue-400 hover:underline"
+              >
+                GitHub →
+              </a>
+            </div>
+          </div>
+
           <div className="border rounded-xl p-6 shadow-sm">
             <h3 className="text-xl font-semibold">
               Autonomous AI Trade Monitoring Agent
